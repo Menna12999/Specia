@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specia</title>
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="images/x.icon">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel ="stylesheet" href="./assets/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"> 
+</head>
+<body>
+  <!-- loading -->
+<div id="loading">
+  <div class="d-flex justify-content-center align-items-center h-100">
+    <span class="loader2"></span>
+  </div>
+  </div>
+<!------------------------------------------------box navbar-------------------------------------------------------->
+<div class="navbar-box d-flex text-white">
+    <div class="sidebar d-flex flex-column rounded-2 ">
+    <img src="./assets/img/logo (1).png" class="mb-5 w-100">
+     <ul class="list-unstyled links">
+        <li><a href="#search"><i class="fa-solid fa-search me-3 mb-4"></i>Search</a></li>
+        <li><a href="#categories"><i class="fa-solid fa-sticky-note me-3 mb-4"></i>Categories</a></li>
+        <li><a href="#area"><i class="fa-solid fa-house-chimney me-3 mb-4"></i>Area</a></li>
+        <li><a href="#ingredients"><i class="fa-solid fa-pizza-slice me-3 mb-4"></i>Ingredients</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-phone me-3 mb-4"></i>Contact us</a></li>
+     </ul>
+       <ul class="list-unstyled d-flex list-icon mx-auto">
+        <li class="fa-brands fa-facebook-f"></li>
+        <li class="fa-brands fa-twitter"></li>
+        <li class="fa-solid fa-globe"></li>
+       </ul>
+       <p class="text-center">© All Right Reserved 2024</p>
+     </div>            
+   
+    <div class="h-100 rounded-3 py-3 bars d-flex flex-column justify-content-between align-items-center text-dark text-center sidenav-visible">
+        <div class="mx-auto"><img src="./assets/img/logo.png" class="w-75"></div>
+        <div class="fa-solid fa-bars icon-toggle"></div>
+        <div class="icons">
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+        </div>
+
+</div>
+  </div>
+  <!---------------------------------------section search----------------------------------------------------------->
+  <section id="search">
+    <div class="search-word bg" class="d-flex justify-content-center align-items-center position-relative">
+        <h1>Search</h1>
+        </div>
+        <div class="container">
+        <div class="search-box shadow-lg rounded-2">
+                <div class="row g-0">
+                <div class="col-lg-3 col-md-6 col-sm-12  mb-lg-0 mb-3">
+                        <div class="dropdown">
+                            <div class="custom-select-box  dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span id="options">Choose</span>
+                              <img src="./assets/img/angle-down-solid.svg" class="icon-angle">
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li class="dropdown-item search-by-name">Search By Name</li>
+                                <li class="dropdown-item search-by-fletter">Search By First Letter</li>
+                             
+                            </ul>
+                          </div>
+                    </div>
+                   
+                <div class="col-lg-7 col-md-6 col-sm-12  mb-lg-0 mb-3">
+                    <input type="text" name="text" placeholder="Recipe Kayword" required class="form-control">
+                </div>
+                
+                <div class="col-lg-2 col-md-12 col-sm-12">
+                    <button type="submit" class="btn-search form-control"><i class="fa fa-search me-2"></i><span>Search</span></button>
+                </div>
+               </div> 
+            </div>
+        </div>
+        <div id="searchedMeals">
+            <div class="container" class="">
+                <div class="row" id="dataSearch">
+                  <div class="d-flex justify-content-center align-itemes-center mt-5 pt-5">
+                    <span class="loader"></span>
+                   </div>  
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!------------------------------------------Details-box-------------------------------------------------->
+    <div id="details" class="p-5 d-none">
+        <i class="fa-solid fa-xmark fs-1" id="closeBtn"></i>
+        <div class="container position-relative">
+          <div class="row" id="fixed-box">
+            <div class="d-flex justify-content-center align-itemes-center mt-5 pt-5">
+              <span class="loader"></span>
+             </div>           
+          </div>
+            </div>
+            </div>
+    <!--------------------------------------categories----------------------------------------------------------------->
+    <section id="categories">
+      <div class="categories-word bg" class="d-flex justify-content-center align-items-center position-relative">
+        <h1>Categories</h1>
+      </div>
+        <div class="container-fluid">
+          <div class="row py-5 my-5" id="dataCategory">
+            <div class="d-flex justify-content-center align-itemes-center mt-5 pt-5">
+              <span class="loader"></span>
+             </div>
+          </div>
+          </div>
+        </div>
+        </div>
+     </section> 
+     <section id="listCategory" class="d-none">
+      <div class="categories-name bg" class="d-flex justify-content-center align-items-center position-relative">
+        <h1 class="category-name"></h1>
+      </div>
+        <div class="container-fluid">
+          <div class="row py-5" id="categoryList">
+            <div class="d-flex justify-content-center align-itemes-center mt-5 pt-5">
+              <span class="loader"></span>
+             </div>
+          </div>
+          </div>
+        </div>
+        </div>
+     </section> 
+     <!----------------------------------Area-------------------------------------------------------------------->
+     <section id="area" class=" py-4">
+      <div class="container">
+        <div class="row" id="area-data">
+          <div class="d-flex justify-content-center align-itemes-center mt-5 pt-5">
+            <span class="loader"></span>
+           </div>
+        </div>
+      </div>
+     </section>
+     <section id="listMealArea" class="d-none">
+      <div class="areas-name bg" class="d-flex justify-content-center align-items-center position-relative">
+        <h1 class="area-name"></h1>
+      </div>
+        <div class="container-fluid">
+          <div class="row py-5" id="areaMeals">
+            <div class="d-flex justify-content-center align-itemes-center mt-5 pt-5">
+              <span class="loader"></span>
+             </div>
+          </div>
+          </div>
+        
+     </section> 
+     <!----------------------------------ingredients---------------------------------------->
+     <section id="ingredients" class=" py-4">
+      <div class="container">
+        <div class="row" id="ingredients-data">
+          <div class="d-flex justify-content-center align-itemes-center mt-5 pt-5">
+            <span class="loader"></span>
+           </div>
+        </div>
+      </div>
+     </section>
+     <section id="listMealIngredients" class="d-none">
+      <div class="ingredients-name bg" class="d-flex justify-content-center align-items-center position-relative">
+        <h1 class="ingredient-name"></h1>
+      </div>
+        <div class="container-fluid">
+          <div class="row py-5" id="ingredientsMeals">
+            <div class="d-flex justify-content-center align-itemes-center mt-5 pt-5">
+              <span class="loader"></span>
+             </div>
+          </div>
+          </div>
+     </section> 
+<!------------------------------------------contact---------------------------------------------------->
+<section id="contact">
+  <div class="contact bg" class="d-flex justify-content-center align-items-center position-relative">
+    <h1>Contact Us</h1>
+  </div>
+  <div class="container-fluid">
+      <form  class="row p-4 g-3">
+      <div class="col-md-6">
+          <input id="nameInput" type="text" class="form-control" placeholder="Enter Your Name">
+          <div id="nameAlert" class="required-msg text-danger w-100 my-2 d-none">Special characters and numbers not allowed.</div>
+      </div>
+      <div class="col-md-6">
+          <input id="emailInput" type="email" class="form-control" placeholder="Enter Your Email">
+          <div id="emailAlert" class="required-msg text-danger w-100 my-2 d-none">Email not valid *exemple@yyy.zzz</div>
+      </div>
+      <div class="col-md-6">
+          <input id="phoneInput" type="tel" class="form-control" placeholder="Enter Your Phone">
+          <div id="phoneAlert" class="required-msg text-danger w-100 my-2 d-none">Enter valid Phone Number</div>
+      </div>
+      <div class="col-md-6">
+          <input id="ageInput" type="number" class="form-control" placeholder="Enter Your Age">
+          <div id="ageAlert" class="required-msg text-danger w-100 my-2 d-none">Enter valid age.</div>
+      </div>
+      <div class="col-md-6">
+          <input id="passwordInput" type="password" class="form-control" placeholder="Enter Your Password">
+          <div id="passwordAlert" class="required-msg text-danger w-100 my-2 d-none">Enter valid password *Minimum eight characters, at least one letter and one number:*</div>
+      </div>
+      <div class="col-md-6">
+          <input id="repasswordInput" type="password" class="form-control" placeholder="Repassword">
+          <div id="repasswordAlert" class="required-msg text-danger w-100 my-2 d-none">Enter a valid password</div>
+      </div>
+      <div class="col-12">
+          <button id="submitBtn" class="btn btn-outline-danger d-block px-2 mx-auto mt-3"
+              disabled>Submit</button>
+      </div>
+        </form>
+     </div>
+  </div>
+  </div>
+</section>
+<!-------------------------------------------------onload ------------------------------------------------------------->
+<section id="onLoad">
+  <div class="website-name bg" class="d-flex justify-content-center align-items-center position-relative">
+    <h1>Specia</h1>
+  </div>
+    <div class="container-fluid">
+      <div class="row py-5" id="onloadMeals">
+       <div class="d-flex justify-content-center align-itemes-center mt-5 pt-5">
+        <span class="loader"></span>
+       </div>
+      </div>
+      </div>
+</section>
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./assets/js/script.js" type="module"></script>
+</body>
+</html>
